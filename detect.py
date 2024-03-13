@@ -50,7 +50,7 @@ def detect(image_path, model, scale):
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1  # only has one class (damage) + 1
     cfg.MODEL.RETINANET.NUM_CLASSES = 1  # only has one class (damage) + 1
     cfg.MODEL.WEIGHTS = os.path.join(
-        "models/damage_segmentation_model_v5.pth")
+        "models/damage_segmentation.pth")
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.7
     cfg['MODEL']['DEVICE'] = 'cpu'  # or cuda
     damage_predictor = DefaultPredictor(cfg)
@@ -63,7 +63,7 @@ def detect(image_path, model, scale):
     # only has five classes (headlamp,hood,rear_bumper,front_bumper_door) + 1
     cfg_mul.MODEL.RETINANET.NUM_CLASSES = 5
     cfg_mul.MODEL.WEIGHTS = os.path.join(
-        "models/part_segmentation_model.pth")
+        "models/component_detection.pth")
     cfg_mul.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.7
     cfg_mul['MODEL']['DEVICE'] = 'cpu'  # or cuda
     part_predictor = DefaultPredictor(cfg_mul)
