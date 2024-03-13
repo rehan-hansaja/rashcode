@@ -1,0 +1,7 @@
+                            COST ESTIMATION            
+
+Part                              Replace/Fix          Cost (Rs)
+-----------------------------------------------------------------
+hood                          Replace   40000
+-----------------------------------------------------------------
+TOTAL DETECTED ESTIMATED COST                         40000
