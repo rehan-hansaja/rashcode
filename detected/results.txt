@@ -2,5 +2,6 @@
 
 Part                              Replace/Fix          Cost (Rs)
 -----------------------------------------------------------------
+front_bumper                  Replace   15000
 -----------------------------------------------------------------
-TOTAL DETECTED ESTIMATED COST                         0
+TOTAL DETECTED ESTIMATED COST                         15000
